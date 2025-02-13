@@ -66,11 +66,24 @@
             background: #218838;
         }
     </style>
+
+    <script>
+        function loginUser(event) {
+            event.preventDefault(); // Prevents form submission
+            window.location.href = "Linux.html"; // Redirects to Linux.html
+        }
+    </script>
+
+
 </head>
 <body>
     <div class="login-container">
         <h2>Login</h2>
+
+        <form onsubmit="loginUser(event)">
+
         <form action="dashboard.html" method="get">
+
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
