@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 5px;
+        }
+        .command {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+            font-family: monospace;
+            color: #00FF00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Linux Commands Guide</h2>
+
+        <div class="section">
+            <h3>Simple Linux Commands</h3>
+            <div class="command">ls - List directory contents</div>
+            <div class="command">pwd - Show current directory</div>
+            <div class="command">cd [directory] - Change directory</div>
+            <div class="command">mkdir [name] - Create a directory</div>
+            <div class="command">rm [file] - Remove a file</div>
+            <div class="command">cp [source] [destination] - Copy files</div>
+        </div>
+
+        <div class="section">
+            <h3>Advanced Linux Commands</h3>
+            <div class="command">grep "text" file - Search for text in a file</div>
+            <div class="command">find /path -name "filename" - Find files</div>
+            <div class="command">tar -cvf archive.tar folder/ - Create tar archive</div>
+            <div class="command">ps aux - Show running processes</div>
+            <div class="command">kill PID - Kill a process</div>
+            <div class="command">chmod 755 file - Change file permissions</div>
+        </div>
+
+        <div class="section">
+            <h3>Hacker Linux Commands</h3>
+            <div class="command">nmap -sV [IP] - Scan open ports</div>
+            <div class="command">netstat -tulnp - Show network connections</div>
+            <div class="command">tcpdump -i eth0 - Capture network packets</div>
+            <div class="command">hydra -l user -P passlist.txt [IP] ssh - Brute force SSH</div>
+            <div class="command">john --wordlist=rockyou.txt hashfile - Crack password hashes</div>
+            <div class="command">sqlmap -u "http://target.com/page?id=1" --dbs - SQL injection test</div>
+        </div>
+    </div>
+
+</body>
+</html>
